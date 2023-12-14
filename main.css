@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+    
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: rgb(255, 64, 16);
+    font-size: 24px;
+    
+}
+
+.nav-item {
+  font-size: 1rem;
+}
+
+.btn, .dropdown-menu {
+  background-color: #03a9f4;
+  color: #fff;
+  
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.login-button {
+    background-color: rgb(255, 64, 61);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color:#fff;
+    cursor: pointer;
+    color: rgb(255, 64, 61);
+}
+
+.navbar-togger {
+    border: none;
+    font-size: 1.25rem;
+    background-color:  #03a9f4; 
+}
+
+.navbar-togger:focus, .btn-close:focus  {
+    box-shadow: none;
+    outline:none;
+    
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover{
+    color: #03a9f4;
+}
+
+.nav-link:active {
+  color: #03a9f4;
+}
+
+
+
+.hero-section {
+    background-color: black;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/1c55c7488843cb529b6a9694b9b5725e-removebg-preview.png) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+  margin-bottom: 10em;
+}
+
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+
+    
+}
+
+h1{
+    color: #03a9f4;
+}
+
+
+  
+
+
+  
+
+  
+  .content {
+    position: relative;
+  }
+  
+  .content h2 {
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    transform: translate(-2%, -50%);
+      
+  }
+  
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+  }
+  
+  .content h2:nth-child(2) {
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+
+  p {
+    height: 200px;
+    width: 500px;
+    margin: 100px auto;
+    position: relative;
+  }
+
+  h2 {
+    color: #03a9f4;
+  }
+  
+  img {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
+    box-shadow: 1px 1px 3px #0008;
+    transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
+    z-index: 0;
+  }
+  
+  img:hover {
+    transform: scale(5);
+    /* on hover, the path gets a bit shorter & flattened & shifted to left/bottom a bit for nicer movement */
+    offset-path: path('m 5 65 q 45-0 90-0 t 90 0 90 0 90-0 90 0');
+    box-shadow: 3px 4px 10px #0006;
+    z-index: 999;
+  }
+  
+  /* 3 images */
+  img:nth-last-child(3):first-child {
+    offset-distance: 17%;
+  }
+  img:nth-last-child(2):nth-child(2) {
+    offset-distance: 49%;
+  }
+  img:last-child:nth-child(3) {
+    offset-distance: 81%;
+  }
+  
+  /* 4 images */
+  img:nth-last-child(4):first-child {
+    offset-distance: 10%;
+  }
+  img:nth-last-child(3):nth-child(2) {
+    offset-distance: 35%;
+  }
+  img:nth-last-child(2):nth-child(3) {
+    offset-distance: 65%;
+  }
+  img:last-child:nth-child(4) {
+    offset-distance: 90%;
+  }
+  
+  /* 5 images */
+  img:nth-last-child(5):first-child {
+    offset-distance: 0%;
+  }
+  img:nth-last-child(4):nth-child(2) {
+    offset-distance: 25%;
+  }
+  img:nth-last-child(3):nth-child(3) {
+    offset-distance: 51%;
+  }
+  img:nth-last-child(2):nth-child(4) {
+    offset-distance: 75%;
+  }
+  img:last-child:nth-child(5) {
+    offset-distance: 100%;
+  }
+
